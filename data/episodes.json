@@ -1,0 +1,62 @@
+[
+  {
+    "id": "welcome-to-superpod",
+    "title": "Welcome to SuperPod",
+    "description": "Join us for our inaugural episode where we introduce the show and what to expect from SuperPod.",
+    "content": "# Welcome to SuperPod!\n\nThis is our first episode where we kick off an amazing journey through the world of podcasts. We'll be covering everything from technology trends to creative storytelling.\n\n## What to Expect\n\n- Weekly episodes every Tuesday\n- Deep dives into interesting topics\n- Guest interviews with industry experts\n- Community discussions and Q&A\n\nStay tuned for more exciting content!",
+    "audioUrl": "https://example.com/audio/welcome.mp3",
+    "duration": 1800,
+    "publishedAt": "2026-05-06T10:00:00Z",
+    "episodeNumber": 1,
+    "tags": ["introduction", "welcome", "announcement"],
+    "imageUrl": "/images/episode1.jpg"
+  },
+  {
+    "id": "future-of-podcasting",
+    "title": "The Future of Podcasting",
+    "description": "Exploring emerging trends and technologies shaping the future of audio content creation and consumption.",
+    "content": "# The Future of Podcasting\n\nIn this episode, we dive deep into the evolving landscape of podcasting and what the future holds.\n\n## Key Topics\n\n- AI-powered content creation\n- Interactive audio experiences\n- Monetization strategies\n- Cross-platform distribution\n- Emerging audio formats\n\nWe discuss how technology is transforming how we create, distribute, and consume podcast content.",
+    "audioUrl": "https://example.com/audio/future.mp3",
+    "duration": 2400,
+    "publishedAt": "2026-04-29T10:00:00Z",
+    "episodeNumber": 2,
+    "tags": ["technology", "future", "trends", "ai"],
+    "imageUrl": "/images/episode2.jpg"
+  },
+  {
+    "id": "storytelling-masterclass",
+    "title": "Storytelling Masterclass",
+    "description": "Learn the art of compelling audio storytelling from experienced podcasters and narrative designers.",
+    "content": "# Storytelling Masterclass\n\nWhat makes a great story? How do you craft compelling narratives that keep listeners engaged?\n\n## Episode Highlights\n\n- The psychology of storytelling\n- Structure and pacing techniques\n- Character development in audio\n- Building emotional connections\n- Practical exercises for podcasters\n\nWhether you're just starting out or looking to refine your craft, this episode has valuable insights for any content creator.",
+    "audioUrl": "https://example.com/audio/storytelling.mp3",
+    "duration": 2100,
+    "publishedAt": "2026-04-22T10:00:00Z",
+    "episodeNumber": 3,
+    "tags": ["storytelling", "narrative", "craft", "tips"],
+    "imageUrl": "/images/episode3.jpg"
+  },
+  {
+    "id": "monetization-strategies",
+    "title": "Monetization Strategies for Podcasters",
+    "description": "Comprehensive guide to various ways podcasters can monetize their content and build sustainable businesses.",
+    "content": "# Monetization Strategies for Podcasters\n\nBuilding a successful podcast business requires understanding various revenue streams and monetization approaches.\n\n## Revenue Models Covered\n\n- Sponsorships and advertising\n- Patreon and membership models\n- Merchandise and affiliate marketing\n- Premium content and paywalls\n- Live events and experiences\n- Crowdfunding and donations\n\nWe break down the pros, cons, and implementation strategies for each approach.",
+    "audioUrl": "https://example.com/audio/monetization.mp3",
+    "duration": 2700,
+    "publishedAt": "2026-04-15T10:00:00Z",
+    "episodeNumber": 4,
+    "tags": ["business", "monetization", "revenue", "sponsorship"],
+    "imageUrl": "/images/episode4.jpg"
+  },
+  {
+    "id": "audience-engagement",
+    "title": "Building and Engaging Your Podcast Audience",
+    "description": "Strategies for growing your listener base and fostering meaningful engagement with your community.",
+    "content": "# Building and Engaging Your Podcast Audience\n\nGrowing a loyal audience is one of the biggest challenges podcasters face. In this episode, we explore proven strategies for audience development.\n\n## Key Strategies\n\n- Social media marketing\n- SEO optimization for podcasts\n- Cross-promotion opportunities\n- Community building techniques\n- Listener feedback and interaction\n- Analytics and growth tracking\n\nLearn how to turn casual listeners into dedicated fans and active community members.",
+    "audioUrl": "https://example.com/audio/audience.mp3",
+    "duration": 2250,
+    "publishedAt": "2026-04-08T10:00:00Z",
+    "episodeNumber": 5,
+    "tags": ["audience", "growth", "engagement", "community"],
+    "imageUrl": "/images/episode5.jpg"
+  }
+]

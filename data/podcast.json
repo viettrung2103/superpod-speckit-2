@@ -1,0 +1,12 @@
+{
+  "title": "SuperPod",
+  "description": "Your ultimate podcast companion for discovering, enjoying, and engaging with amazing audio content. Join us on a journey through stories, ideas, and conversations that matter.",
+  "author": "SuperPod Team",
+  "email": "hello@superpod.com",
+  "imageUrl": "/images/podcast-cover.jpg",
+  "websiteUrl": "https://superpod.com",
+  "rssUrl": "https://superpod.com/rss",
+  "language": "en",
+  "categories": ["Technology", "Education", "Entertainment"],
+  "explicit": false
+}
