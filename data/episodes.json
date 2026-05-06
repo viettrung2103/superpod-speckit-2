@@ -8,7 +8,11 @@
     "duration": 1800,
     "publishedAt": "2026-05-06T10:00:00Z",
     "episodeNumber": 1,
-    "tags": ["introduction", "welcome", "announcement"],
+    "tags": [
+      "introduction",
+      "welcome",
+      "announcement"
+    ],
     "imageUrl": "/images/episode1.jpg"
   },
   {
@@ -20,7 +24,12 @@
     "duration": 2400,
     "publishedAt": "2026-04-29T10:00:00Z",
     "episodeNumber": 2,
-    "tags": ["technology", "future", "trends", "ai"],
+    "tags": [
+      "technology",
+      "future",
+      "trends",
+      "ai"
+    ],
     "imageUrl": "/images/episode2.jpg"
   },
   {
@@ -32,7 +41,12 @@
     "duration": 2100,
     "publishedAt": "2026-04-22T10:00:00Z",
     "episodeNumber": 3,
-    "tags": ["storytelling", "narrative", "craft", "tips"],
+    "tags": [
+      "storytelling",
+      "narrative",
+      "craft",
+      "tips"
+    ],
     "imageUrl": "/images/episode3.jpg"
   },
   {
@@ -44,7 +58,12 @@
     "duration": 2700,
     "publishedAt": "2026-04-15T10:00:00Z",
     "episodeNumber": 4,
-    "tags": ["business", "monetization", "revenue", "sponsorship"],
+    "tags": [
+      "business",
+      "monetization",
+      "revenue",
+      "sponsorship"
+    ],
     "imageUrl": "/images/episode4.jpg"
   },
   {
@@ -56,7 +75,12 @@
     "duration": 2250,
     "publishedAt": "2026-04-08T10:00:00Z",
     "episodeNumber": 5,
-    "tags": ["audience", "growth", "engagement", "community"],
+    "tags": [
+      "audience",
+      "growth",
+      "engagement",
+      "community"
+    ],
     "imageUrl": "/images/episode5.jpg"
   }
 ]

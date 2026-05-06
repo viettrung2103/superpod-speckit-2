@@ -1,5 +1,5 @@
-import { HeroSection } from '@/components/sections/hero-section'
-import { RecentEpisodes } from '@/components/sections/recent-episodes'
+import { HeroSection } from "@/components/sections/hero-section";
+import { RecentEpisodes } from "@/components/sections/recent-episodes";
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
       <HeroSection />
       <RecentEpisodes />
     </main>
-  )
+  );
 }

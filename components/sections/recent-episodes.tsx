@@ -1,13 +1,13 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Play, Clock, Calendar } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { getRecentEpisodes, formatDuration, formatDate } from '@/lib/episodes'
-import Link from 'next/link'
+import { motion } from "framer-motion";
+import { Play, Clock, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { getRecentEpisodes, formatDuration, formatDate } from "@/lib/episodes";
+import Link from "next/link";
 
 export function RecentEpisodes() {
-  const recentEpisodes = getRecentEpisodes(6)
+  const recentEpisodes = getRecentEpisodes(6);
 
   return (
     <section className="py-20 px-4">
@@ -23,7 +23,8 @@ export function RecentEpisodes() {
             Recent Episodes
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Stay up to date with our latest podcast episodes. Discover new stories and insights.
+            Stay up to date with our latest podcast episodes. Discover new
+            stories and insights.
           </p>
         </motion.div>
 
@@ -77,10 +78,13 @@ export function RecentEpisodes() {
                     ))}
                   </div>
 
-                  <Button variant="outline" size="sm" asChild className="w-full border-white/20 text-white hover:bg-white/10">
-                    <Link href={`/episodes/${episode.id}`}>
-                      Listen Now
-                    </Link>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="w-full border-white/20 text-white hover:bg-white/10"
+                  >
+                    <Link href={`/episodes/${episode.id}`}>Listen Now</Link>
                   </Button>
                 </div>
               </div>
@@ -95,13 +99,16 @@ export function RecentEpisodes() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <Button size="lg" variant="outline" asChild className="border-white/20 text-white hover:bg-white/10">
-            <Link href="/episodes">
-              View All Episodes
-            </Link>
+          <Button
+            size="lg"
+            variant="outline"
+            asChild
+            className="border-white/20 text-white hover:bg-white/10"
+          >
+            <Link href="/episodes">View All Episodes</Link>
           </Button>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

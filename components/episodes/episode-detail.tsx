@@ -1,30 +1,41 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Play, Pause, SkipBack, SkipForward, Volume2, Share2, Download, Calendar, Clock, Tag } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Episode } from '@/lib/types'
-import { formatDuration, formatDate } from '@/lib/episodes'
-import { useState } from 'react'
+import { motion } from "framer-motion";
+import {
+  Play,
+  Pause,
+  SkipBack,
+  SkipForward,
+  Volume2,
+  Share2,
+  Download,
+  Calendar,
+  Clock,
+  Tag,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Episode } from "@/lib/types";
+import { formatDuration, formatDate } from "@/lib/episodes";
+import { useState } from "react";
 
 interface EpisodeDetailProps {
-  episode: Episode
+  episode: Episode;
 }
 
 export function EpisodeDetail({ episode }: EpisodeDetailProps) {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [currentTime, setCurrentTime] = useState(0)
-  const [duration, setDuration] = useState(episode.duration)
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(episode.duration);
 
   const handlePlayPause = () => {
-    setIsPlaying(!isPlaying)
-  }
+    setIsPlaying(!isPlaying);
+  };
 
   const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60)
-    const secs = Math.floor(seconds % 60)
-    return `${mins}:${secs.toString().padStart(2, '0')}`
-  }
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
+  };
 
   return (
     <motion.div
@@ -97,7 +108,11 @@ export function EpisodeDetail({ episode }: EpisodeDetailProps) {
 
         {/* Controls */}
         <div className="flex items-center justify-center gap-4 mb-6">
-          <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="text-white hover:bg-white/10"
+          >
             <SkipBack className="w-6 h-6" />
           </Button>
 
@@ -113,24 +128,40 @@ export function EpisodeDetail({ episode }: EpisodeDetailProps) {
             )}
           </Button>
 
-          <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="text-white hover:bg-white/10"
+          >
             <SkipForward className="w-6 h-6" />
           </Button>
         </div>
 
         {/* Additional Controls */}
         <div className="flex items-center justify-center gap-6">
-          <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-gray-400 hover:text-white"
+          >
             <Volume2 className="w-4 h-4 mr-2" />
             Volume
           </Button>
 
-          <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-gray-400 hover:text-white"
+          >
             <Download className="w-4 h-4 mr-2" />
             Download
           </Button>
 
-          <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-gray-400 hover:text-white"
+          >
             <Share2 className="w-4 h-4 mr-2" />
             Share
           </Button>
@@ -141,9 +172,13 @@ export function EpisodeDetail({ episode }: EpisodeDetailProps) {
       <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
         <h2 className="text-2xl font-bold text-white mb-6">Show Notes</h2>
         <div className="prose prose-invert max-w-none">
-          <div dangerouslySetInnerHTML={{ __html: episode.content.replace(/\n/g, '<br />') }} />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: episode.content.replace(/\n/g, "<br />"),
+            }}
+          />
         </div>
       </div>
     </motion.div>
-  )
+  );
 }

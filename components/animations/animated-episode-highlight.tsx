@@ -1,17 +1,19 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Play, Sparkles } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Episode } from '@/lib/types'
-import { formatDuration } from '@/lib/episodes'
-import Link from 'next/link'
+import { motion } from "framer-motion";
+import { Play, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Episode } from "@/lib/types";
+import { formatDuration } from "@/lib/episodes";
+import Link from "next/link";
 
 interface AnimatedEpisodeHighlightProps {
-  episode: Episode
+  episode: Episode;
 }
 
-export function AnimatedEpisodeHighlight({ episode }: AnimatedEpisodeHighlightProps) {
+export function AnimatedEpisodeHighlight({
+  episode,
+}: AnimatedEpisodeHighlightProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -26,21 +28,21 @@ export function AnimatedEpisodeHighlight({ episode }: AnimatedEpisodeHighlightPr
             key={i}
             className="absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full"
             initial={{
-              x: Math.random() * 100 + '%',
-              y: Math.random() * 100 + '%',
+              x: Math.random() * 100 + "%",
+              y: Math.random() * 100 + "%",
               opacity: 0,
-              scale: 0
+              scale: 0,
             }}
             animate={{
-              x: Math.random() * 100 + '%',
-              y: Math.random() * 100 + '%',
+              x: Math.random() * 100 + "%",
+              y: Math.random() * 100 + "%",
               opacity: [0, 1, 0],
-              scale: [0, 1, 0]
+              scale: [0, 1, 0],
             }}
             transition={{
               duration: 3 + Math.random() * 2,
               repeat: Infinity,
-              delay: Math.random() * 2
+              delay: Math.random() * 2,
             }}
           />
         ))}
@@ -51,17 +53,17 @@ export function AnimatedEpisodeHighlight({ episode }: AnimatedEpisodeHighlightPr
         className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
         animate={{
           background: [
-            'linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899)',
-            'linear-gradient(135deg, #8b5cf6, #ec4899, #3b82f6)',
-            'linear-gradient(225deg, #ec4899, #3b82f6, #8b5cf6)',
-            'linear-gradient(315deg, #3b82f6, #8b5cf6, #ec4899)'
-          ]
+            "linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899)",
+            "linear-gradient(135deg, #8b5cf6, #ec4899, #3b82f6)",
+            "linear-gradient(225deg, #ec4899, #3b82f6, #8b5cf6)",
+            "linear-gradient(315deg, #3b82f6, #8b5cf6, #ec4899)",
+          ],
         }}
         transition={{ duration: 4, repeat: Infinity }}
         style={{
-          padding: '2px',
-          mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-          maskComposite: 'xor'
+          padding: "2px",
+          mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+          maskComposite: "xor",
         }}
       />
 
@@ -149,9 +151,7 @@ export function AnimatedEpisodeHighlight({ episode }: AnimatedEpisodeHighlightPr
               asChild
               className="border-white/20 text-white hover:bg-white/10 px-8 py-3 rounded-full"
             >
-              <Link href="/episodes">
-                View All Episodes
-              </Link>
+              <Link href="/episodes">View All Episodes</Link>
             </Button>
           </motion.div>
         </div>
@@ -161,15 +161,15 @@ export function AnimatedEpisodeHighlight({ episode }: AnimatedEpisodeHighlightPr
           className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/10 to-purple-600/10"
           animate={{
             opacity: [0.3, 0.6, 0.3],
-            scale: [1, 1.02, 1]
+            scale: [1, 1.02, 1],
           }}
           transition={{
             duration: 2,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         />
       </div>
     </motion.div>
-  )
+  );
 }

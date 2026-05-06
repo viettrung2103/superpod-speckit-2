@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { ChevronRight } from 'lucide-react'
-import { AnimatedEpisodeHighlight } from '@/components/animations/animated-episode-highlight'
-import { getCurrentEpisode } from '@/lib/episodes'
+import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
+import { AnimatedEpisodeHighlight } from "@/components/animations/animated-episode-highlight";
+import { getCurrentEpisode } from "@/lib/episodes";
 
 export function HeroSection() {
-  const currentEpisode = getCurrentEpisode()
+  const currentEpisode = getCurrentEpisode();
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
@@ -45,13 +45,14 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Welcome to{' '}
+            Welcome to{" "}
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               SuperPod
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Discover amazing podcast episodes, explore new stories, and join the conversation that matters.
+            Discover amazing podcast episodes, explore new stories, and join the
+            conversation that matters.
           </p>
         </motion.div>
 
@@ -74,5 +75,5 @@ export function HeroSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

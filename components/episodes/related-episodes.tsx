@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Play, Clock } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Episode } from '@/lib/types'
-import { formatDuration, formatDate } from '@/lib/episodes'
-import Link from 'next/link'
+import { motion } from "framer-motion";
+import { Play, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Episode } from "@/lib/types";
+import { formatDuration, formatDate } from "@/lib/episodes";
+import Link from "next/link";
 
 interface RelatedEpisodesProps {
-  episodes: Episode[]
+  episodes: Episode[];
 }
 
 export function RelatedEpisodes({ episodes }: RelatedEpisodesProps) {
@@ -63,10 +63,13 @@ export function RelatedEpisodes({ episodes }: RelatedEpisodesProps) {
                   {episode.description}
                 </p>
 
-                <Button variant="outline" size="sm" asChild className="w-full border-white/20 text-white hover:bg-white/10">
-                  <Link href={`/episodes/${episode.id}`}>
-                    Listen
-                  </Link>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  asChild
+                  className="w-full border-white/20 text-white hover:bg-white/10"
+                >
+                  <Link href={`/episodes/${episode.id}`}>Listen</Link>
                 </Button>
               </div>
             </div>
@@ -74,5 +77,5 @@ export function RelatedEpisodes({ episodes }: RelatedEpisodesProps) {
         ))}
       </div>
     </motion.div>
-  )
+  );
 }
